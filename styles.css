@@ -102,6 +102,7 @@
 
 .navbar__links:hover {
     color: #9518fc;
+    transition: all 0.3s ease;
     
 }
 
@@ -118,7 +119,30 @@
 }
 
   
-   .navbar {
+   .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    
+    opacity: 1;
+    transition: all 0.5 ease;
+    z-index: -1;
+    background: #131313;
+   }
+
+   .navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+   }
+
+.navbar {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -235,6 +259,8 @@
     height: 90;
     text-align: center;
     padding: 30px;
+   
+
 }
 
 .hero__heading {
@@ -396,4 +422,12 @@ background: linear-gradient(to right,
     text-align: right;
 }
 
-(split)
+
+
+.navbar {
+    border-right: thick solid;
+    border-right-:(to right,#ff6a00, #ee0979);
+    
+}
+
+
