@@ -51,8 +51,9 @@
 
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #342221;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
     background-size: 100;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -63,6 +64,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    border-bottom: solid;
+    border-radius: 15px;
+    text-align: left;
+    padding-right: 25px;
+   
 
 }
 
@@ -129,11 +135,11 @@
     opacity: 1;
     transition: all 0.5 ease;
     z-index: -1;
-    background: #131313;
+    background: #3d2424;
    }
 
    .navbar__menu.active {
-    background: #131313;
+    background: #cc3232;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -176,6 +182,7 @@
    .nav__links li {
     display: inline-block;
     padding: 0px 20px;
+    
    }
 
    
@@ -245,7 +252,6 @@
 /* Hero Section*/
 .hero {
     background: linear-gradient(to right, #161616, #000000);
-
     padding: 200px 0;
 }
 
@@ -316,20 +322,23 @@
 /* About Section */
 .main {
     background-color: #131313;
-    padding: 10rem 0;
+    padding: 3rem 0;
 }
 
 .main__container {
-    display: grid;
+    
     grid-template-columns: 1fr 1fr;
     align-items: center;
     
     margin: 0 auto;
-    height: 90%;
+    height: 100%;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
+    width: 1000px;
+    max-width: 5000px;
+    padding: 10 50px;
+    padding-right: 350px;
+    padding-bottom: 10px;
+    padding-top: -10px;
 }
 
 .main__content {
@@ -338,7 +347,7 @@
 }
 
 .main__content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     background-size: 100;
@@ -351,7 +360,7 @@
 }
 
 .main__content h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     background: #ff8177;
     background: -webkit-linear-gradient (
         to right,
@@ -364,6 +373,11 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+.main__container h3 {
+    text-align: center;
+}
+
 .main__content p {
     border-top: 8px solid #bbb;
     border-radius: 5px;
@@ -430,4 +444,23 @@ background: linear-gradient(to right,
     
 }
 
+.list__container {
+    color: white;
+    list-style-type: circle;
+   
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 3.5rem;
+} 
+
+.list__container li {
+    font-size: 1.5rem;
+    line-height: 200%;
+    
+}
+
+main__content h1 {
+    padding-bottom: 200px;
+}
 
