@@ -550,5 +550,12 @@ background-image: linear-gradient(to right, #FF7EB3, #00C1FF, #BE93FF);
       .list-list2 {
         text-align: center;
       }
+
+      .list__container h2 {
+        border-bottom: 1px solid rgb(36, 163, 192);
+        border-radius: 5px;
+        border-width: 5px;
+        
+      }
       
     
